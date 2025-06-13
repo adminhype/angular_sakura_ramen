@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+    @font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+.fontMontserrat {
+    font-family: "Montserrat", sans-serif;
+}
