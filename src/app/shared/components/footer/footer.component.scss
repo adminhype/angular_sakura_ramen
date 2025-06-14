@@ -1,0 +1,124 @@
+#footer-area{
+    background-color: #0a141e;
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 1100px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+
+        img {
+            height: 44px;
+        }
+
+        .desktop-logo {
+            display: block;
+        }
+
+        .mobile-logo {
+            display: none;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footerArea {
+            .footerContent {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        #address-section {
+            h2 {
+                font-size: 32px;
+                padding-top: 72px;
+            }
+            .address {
+                font-size: 16px;
+                padding-bottom: 40px;
+                display: flex;
+                align-items: center;
+            }
+            .map-container {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                border: none;
+
+                iframe {
+                    width: 100%;
+                    height: 600px;
+                    border: none;
+                }
+            }
+        }
+
+        .footerArea {
+            height: 86px;
+
+            .footerContent {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            .logo {
+                img {
+                    display: none;
+                }
+                .desktop-logo {
+                    display: none;
+                }
+                .mobile-logo {
+                    display: block;
+                    margin-left: 10px;
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-evenly;
+                padding: 10px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
