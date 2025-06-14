@@ -1,0 +1,118 @@
+#order-section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0;
+    gap: 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 80px;
+        font-weight: bold;
+        color: #9f0908;
+        padding-bottom: 64px;
+    }
+
+    .select-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 144px;
+        height: auto;
+        font-family: "Economica", sans-serif;
+
+        .bowl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 128px;
+            }
+
+            h3 {
+                padding-top: 16px;
+                font-size: 56px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 850px) {
+        .select-section {
+            gap: 40px;
+        }
+    }
+    @media (max-width: 768px) {
+        #order-section {
+            padding: 96px 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding-bottom: 48px;
+            font-size: 64px;
+        }
+
+        .select-section {
+            gap: 80px;
+            height: auto;
+            font-family: "Economica", sans-serif;
+
+            .bowl {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                img {
+                    width: 112px;
+                }
+
+                h3 {
+                    padding-top: 8px;
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media (min-width: 375px) and (max-width: 570px) {
+        h2 {
+            font-size: 44px;
+        }
+        .select-section {
+            font-size: 0.9rem;
+            gap: 10px;
+        }
+    }
+    @media (max-width: 375px) {
+        h2 {
+            text-align: center;
+            padding-bottom: 40px;
+            font-size: 40px;
+        }
+
+        .select-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            height: auto;
+            font-family: "Economica", sans-serif;
+
+            .bowl {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
